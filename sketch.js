@@ -13,14 +13,14 @@ var gameState = "onSling";
 var score=0;
 
 function preload() {
-    getBackgroundImg();
+    
 }
 
 function setup(){
     var canvas = createCanvas(1200,400);
     engine = Engine.create();
     world = engine.world;
-
+   getBackgroundImg();
 
     ground = new Ground(600,height,1200,20);
     platform = new Ground(150, 305, 300, 170);
@@ -78,7 +78,7 @@ function draw(){
     platform.display();
     //log6.display();
     slingshot.display();    
-    getBackgroundImg();
+ 
 }
 
 function mouseDragged(){
